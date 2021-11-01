@@ -302,4 +302,8 @@
   }
 </style>
 <app-navbar></app-navbar>
+
+<app-task-list [tasks]="tasks"></app-task-list>
+
+<app-task-add (addTaskEventEmitter)="addTaskEventEmitter($event)"></app-task-add>
 <router-outlet></router-outlet>

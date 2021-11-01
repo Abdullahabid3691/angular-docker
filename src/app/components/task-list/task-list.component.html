@@ -1,0 +1,9 @@
+<mat-card class="task-container">
+    <mat-list>
+        <mat-card class="task-item-container" *ngFor="let task of tasks">
+            <mat-list-item [ngClass]="{'strike': task.status == 2}">
+                {{task.title}}
+            </mat-list-item>
+        </mat-card>
+    </mat-list>
+</mat-card>
